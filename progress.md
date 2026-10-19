@@ -1,7 +1,7 @@
 # Training Progress & Proof – Renuka Jadhav
 
 Every finished task gets a proof: a commit, a link, or a screenshot saved in `proof/`.
-Plan: [training-plan.md](training-plan.md)
+Plan: [training-plan.md](training-plan.md) for Days 1–5 · "Renuka's Learning Path" (PDF from my manager, 19 Oct) for Days 6–20
 
 ## Summary
 
@@ -11,6 +11,22 @@ Plan: [training-plan.md](training-plan.md)
 | 2 | Done | [commit history](https://github.com/renukajadhav-spec/training/commits/main) |
 | 3 | Done | [Live profile page](https://renukajadhav-spec.github.io/training/) |
 | 4 | Done | [vendors.csv](Day%2004/vendors.csv) · [Day 4 notes](Day%2001/notes.md) |
+| 5 | Done | [vendor-page repo](https://github.com/renukajadhav-spec/vendor-page) · [overdue in red](proof/day5-overdue-red.png) |
+| 6 | To do | |
+| 7 | To do | |
+| 8 | To do | |
+| 9 | To do | |
+| 10 | To do | |
+| 11 | To do | |
+| 12 | To do | |
+| 13 | To do | |
+| 14 | To do | |
+| 15 | To do | |
+| 16 | To do | |
+| 17 | To do | |
+| 18 | To do | |
+| 19 | To do | |
+| 20 | To do | |
 
 ## Day 1 – Set up laptop, meet VS Code (12 Oct 2026)
 
@@ -70,3 +86,273 @@ Plan: [training-plan.md](training-plan.md)
 - [x] Send Day 4 daily note to the manager (sent 15 Oct).
 
 **Extra (15 Oct):** Profile page upgraded to v2: a professional two-column résumé built from my CV – commit `c487019`, live at https://renukajadhav-spec.github.io/training/, screenshot [proof/day3-profile-page-v2.png](proof/day3-profile-page-v2.png).
+
+## Day 5 – Connect a page to the database (19 Oct 2026)
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | New folder and repo `vendor-page` | Done | Folder `Desktop\vendor-page` · repo [vendor-page](https://github.com/renukajadhav-spec/vendor-page) |
+| 2 | Plan mode first: page shows vendors from Supabase in a table, overdue vendors in red | Done | Plan read and approved before building · 15 vendors, 7 overdue in red on 19 Oct – [proof/day5-overdue-red.png](proof/day5-overdue-red.png) |
+| 3 | Small form to add a vendor; check it appears in Supabase | Done | Added "Shivam Enterprises"; table now 16 records – [proof/day5-new-vendor.png](proof/day5-new-vendor.png) |
+| 4 | Ask "Which key did you use? Is it safe to push this?"; no secret key in any pushed file | Done | Only the publishable key used; search for `service_role` / `sb_secret` found nothing. Two RLS policies (read + add only) – [proof/day5-rls-policies.png](proof/day5-rls-policies.png) |
+| 5 | Commit and push | Done | Commit `bf4f463` on `vendor-page` main |
+
+---
+
+# Learning Path – Days 6 to 20
+
+How every topic works: Why → What → How → Where → Do (hands-on) → Explain back.
+Learning happens in the claude.ai Project **My Training** (one chat per topic). At the end of each chat I type `summary` and paste it into my Learning Notebook.
+Review: up to 30 minutes a day with my manager. I explain without notes. Clear = move on, not clear = repeat.
+
+## Before Day 6 – Set up the Claude tutor
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Create Project **My Training** in claude.ai | To do | |
+| 2 | Paste the project instructions (Learning Path page 3) | To do | |
+| 3 | Start a Learning Notebook (Word or Google doc) | To do | |
+
+## Day 6 – The big picture, VS Code, Git and GitHub
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: how software gets built | To do | |
+| 2 | Draw idea → live app on paper; mark VS Code, Git, GitHub, Supabase, GitHub Pages, Claude Code; check with Claude | To do | |
+| 3 | Session 2 chat: VS Code as a workbench | To do | |
+| 4 | Write what each part of the VS Code screen does; let Claude correct me | To do | |
+| 5 | Session 3 chat: Git and GitHub as an audit trail | To do | |
+| 6 | Explain my Day 2 commits; make 1 new commit, explaining each step before running it | To do | |
+| 7 | Summaries + 3 open questions in the notebook | To do | |
+
+**Review (explain without notes):**
+- [ ] Idea → live app, in my own words
+- [ ] What VS Code is for, plus one alternative
+- [ ] Git vs GitHub
+- [ ] What a commit is and why history matters (accounting comparison)
+- [ ] Why we never work directly on the main copy
+
+## Day 7 – How a web app works: pages, databases, going live
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: what happens when you open a link | To do | |
+| 2 | View page source of my profile page and discuss it; change one line, push, watch it update | To do | |
+| 3 | Session 2 chat: databases vs Excel | To do | |
+| 4 | Design a `vendor invoices` table on paper; 3 SQL questions (guess first, then run) | To do | |
+| 5 | Session 3 chat: how a page talks to the database (API, keys) | To do | |
+| 6 | Explain the visitor → page → API → Supabase diagram as if to a new joiner | To do | |
+| 7 | Summaries + 3 open questions in the notebook | To do | |
+
+**Review (explain without notes):**
+- [ ] What happens when someone opens my page link
+- [ ] Front end, back end, database (Zoho example)
+- [ ] Why apps use a database instead of Excel
+- [ ] My vendor + invoice table design and the link between them
+- [ ] What an API key is and which kind must stay secret
+
+## Day 8 – What AI really is, and where it goes wrong
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: how Claude works | To do | |
+| 2 | Catch the mistake: 5 GST/TDS questions, mark wrong / half-right / unsure | To do | |
+| 3 | Session 2 chat: context and tokens | To do | |
+| 4 | Ask about Day 7 outside vs inside the Project; explain the difference | To do | |
+| 5 | Session 3 chat: many AI models | To do | |
+| 6 | Same question to Claude and ChatGPT/Gemini; comparison table | To do | |
+
+**Review (explain without notes):**
+- [ ] How Claude produces an answer
+- [ ] Why AI can be confidently wrong, with my own example
+- [ ] What context is, and why one chat per topic
+- [ ] One difference between models, and when I'd pick which
+
+## Day 9 – Claude's toolbox
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: chat, Projects, files, search | To do | |
+| 2 | 20 fake bank entries in Excel; Claude categorises and totals; check line by line | To do | |
+| 3 | Session 2 chat: artifacts | To do | |
+| 4 | TDS calculator artifact: write spec first, test 5 known cases, find and fix 1 mistake | To do | |
+| 5 | Session 3 chat: Claude Code | To do | |
+| 6 | "Explain this project", then Plan mode for 1 small change, then "explain what you changed" | To do | |
+| 7 | One line each: when I use chat, a Project, an artifact, Claude Code | To do | |
+
+**Review (explain without notes):**
+- [ ] Which part of Claude for 4 situations my manager names
+- [ ] My TDS artifact and the mistake I caught
+- [ ] What Plan mode is and why I read the plan first
+
+## Day 10 – Good instructions, and checking AI's work
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: what makes an instruction good | To do | |
+| 2 | Rewrite 5 vague instructions; compare vague vs improved results | To do | |
+| 3 | Session 2 chat: ask first, plan first | To do | |
+| 4 | "Vendor ageing report tool" with and without "ask me questions first, then show your plan" | To do | |
+| 5 | Session 3 chat: checking AI's work as a non-coder | To do | |
+| 6 | My "Before I accept AI's work" checklist (5–7 points) | To do | |
+
+**Review (explain without notes):**
+- [ ] One vague-to-good rewrite and what changed
+- [ ] Why "ask me first" and "plan first" help
+- [ ] My checklist
+
+## Day 11 – The market: picking the best tool
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: map of AI building tools | To do | |
+| 2 | GST invoice calculator page twice: Lovable (free) and Claude Code; compare (fake data only) | To do | |
+| 3 | Session 2 chat: choosing with reasons (4 requests) | To do | |
+| 4 | Decision table: request → tool → why → risk, plus 2 of my own | To do | |
+
+**Review (explain without notes):**
+- [ ] My two GST pages: which I'd pick and why
+- [ ] Tool choice for 3 situations my manager names
+- [ ] Why company or client data never goes into free tools
+
+## Day 12 – From a one-line request to a clear brief (Expense Claim app)
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: interview Claude acting as the requester | To do | |
+| 2 | Write `prd.md`: users, what it does, screens, rules, Must have / Nice to have | To do | |
+| 3 | Session 2 chat: break it into build steps | To do | |
+| 4 | Add "Build steps" with a "Done when…" line for each | To do | |
+| 5 | Send `prd.md` to my manager before the review | To do | |
+
+**Review (explain without notes):**
+- [ ] The brief is clear enough for someone else to build from
+- [ ] Why each Nice to have is not a Must have
+- [ ] Why the build steps are in that order
+
+## Day 13 – Data, screens, and who sees what
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: design the tables (Claude asks, I design) | To do | |
+| 2 | Draw the tables; compare with employee master / transactions / maker-checker; Claude reviews | To do | |
+| 3 | Session 2 chat: screens and flow + clickable mockup artifact | To do | |
+| 4 | Walk the mockup as employee and as manager; get at least 2 things changed | To do | |
+| 5 | Session 3 chat: login, roles, Row Level Security | To do | |
+| 6 | Access rules in plain words added to `prd.md` (with tables and screens) | To do | |
+
+**Review (explain without notes):**
+- [ ] My tables and how they link
+- [ ] Mockup walk-through as employee and manager
+- [ ] How the app stops an employee seeing others' claims
+
+## Day 14 – Build part 1: setup, login, claim submission
+
+Safety rules: 1) no passwords or keys in GitHub (ask "is anything secret in this change?" before every push) · 2) fake data only · 3) ask my manager before deleting files, tables or data.
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: setting up a project the right way | To do | |
+| 2 | Repo `expense-claims` with `prd.md`, `rules.md` (safety rules, plan first, ask before adding tables, explain changes simply), empty `handoff.md` | To do | |
+| 3 | Plan mode: plan for login + claim submission; check tables match Day 13 | To do | |
+| 4 | Build on a new branch; ask "explain what you changed and why" after each change | To do | |
+| 5 | Test each screen with fake users using my Day 10 checklist | To do | |
+| 6 | Update `handoff.md`, open a pull request, merge | To do | |
+| 7 | Notebook: one change I understand, one I don't yet | To do | |
+
+**Review (explain without notes):**
+- [ ] Live demo: log in as employee and submit a claim
+- [ ] One change Claude made, and why
+- [ ] My `rules.md`, and no secret keys in the repo
+
+## Day 15 – Build part 2, and testing like an auditor
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | New Claude Code chat that reads `handoff.md` first | To do | |
+| 2 | Plan and build the manager screen: pending claims, approve/reject with remark | To do | |
+| 3 | Test full flow: submit → approve → employee sees "Approved" | To do | |
+| 4 | Session 2 chat: how software is tested; my test checklist | To do | |
+| 5 | Run checklist (pass/fail), fix failures, retest; try blank, negative, very long description | To do | |
+| 6 | Update `handoff.md`, pull request, merge; keep test results | To do | |
+
+**Review (explain without notes):**
+- [ ] Live demo of the full flow
+- [ ] My test checklist with results
+- [ ] One problem I found myself, and how it was fixed
+
+## Day 16 – Going live and working like a team
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: putting a real app live (GitHub Pages vs Vercel vs Netlify) | To do | |
+| 2 | Put the app live; run 3 checklist tests on my phone; confirm no secret key visible | To do | |
+| 3 | Session 2 chat: how a team works on one app | To do | |
+| 4 | One improvement on a branch; PR with what / why / how tested; explain each change | To do | |
+| 5 | Share the live link with my manager | To do | |
+
+**Review (explain without notes):**
+- [ ] Live link works on my manager's phone
+- [ ] What happens between my push and the live app updating
+- [ ] What a good pull request description contains
+
+## Day 17 – Finding the real cause of a problem
+
+FR comment format: Problem · Root cause · Fix · Tested · Status (Fixed / Need more info)
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Session 1 chat: root cause thinking, error messages, browser console | To do | |
+| 2 | FR 1: repeat → root cause → fix on branch `fr-1-…` → retest | To do | |
+| 3 | FR 2: repeat → root cause → fix on branch `fr-2-…` → retest | To do | |
+
+**Review (explain without notes):**
+- [ ] One FR end to end: problem, root cause, fix, test
+- [ ] Fixing the cause vs hiding the problem
+
+## Day 18 – Finishing FRs and talking to users
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Finish remaining FRs; rerun full checklist on the live app | To do | |
+| 2 | Session 2 chat: writing to users | To do | |
+| 3 | User comment for each FR; questions + "Need more info" for any vague FR | To do | |
+
+**Review (explain without notes):**
+- [ ] FR comments readable by a non-technical person
+- [ ] How I handled the vague FR
+
+## Day 19 – Build something new, on my own
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Get the one-line request from my manager | To do | |
+| 2 | Pick the tool and write down why | To do | |
+| 3 | Short brief: users, screens, data, rules, Must have | To do | |
+| 4 | Build, test, put live if the tool allows | To do | |
+
+**Review:**
+- [ ] Why I chose that tool
+- [ ] My brief, and how close the app is to it
+- [ ] What I'd do differently next time
+
+## Day 20 – Finish, demo, and the road ahead
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Finish the Day 19 app | To do | |
+| 2 | `README.md` for the expense app | To do | |
+| 3 | 20-minute demo: profile page, expense app, one FR, Day 19 app | To do | |
+| 4 | Notebook: 3 things I'm confident about, 3 I still find hard | To do | |
+
+**Sign-off (8 or more = ready for small real tasks):**
+- [ ] Explain why we need VS Code, Git, GitHub, a database and hosting, and how they fit
+- [ ] Explain how AI works, where it goes wrong, how I check it
+- [ ] Choose the right AI tool for a request, with reasons
+- [ ] Turn a one-line request into a clear brief with build steps
+- [ ] Design simple tables, screens and access rules
+- [ ] Use Claude Code with Plan mode and explain its changes
+- [ ] Test like an auditor and fix what fails
+- [ ] Find a root cause and write a clear user update
+- [ ] Follow the 3 safety rules without being reminded
+- [ ] Build a small app alone from a one-line request
