@@ -11,7 +11,7 @@ Plan: [training-plan.md](training-plan.md) for Days 1–5 · "Renuka's Learning 
 | 2 | Done | [commit history](https://github.com/renukajadhav-spec/training/commits/main) |
 | 3 | Done | [Live profile page](https://renukajadhav-spec.github.io/training/) |
 | 4 | Done | [vendors.csv](Day%2004/vendors.csv) · [Day 4 notes](Day%2001/notes.md) |
-| 5 | To do | Completing now, before Day 6 |
+| 5 | Done | [vendor-page repo](https://github.com/renukajadhav-spec/vendor-page) · [overdue in red](proof/day5-overdue-red.png) |
 | 6 | To do | |
 | 7 | To do | |
 | 8 | To do | |
@@ -87,18 +87,15 @@ Plan: [training-plan.md](training-plan.md) for Days 1–5 · "Renuka's Learning 
 
 **Extra (15 Oct):** Profile page upgraded to v2: a professional two-column résumé built from my CV – commit `c487019`, live at https://renukajadhav-spec.github.io/training/, screenshot [proof/day3-profile-page-v2.png](proof/day3-profile-page-v2.png).
 
-## Day 5 – Connect a page to the database
+## Day 5 – Connect a page to the database (19 Oct 2026)
 
 | # | Task | Status | Proof |
 |---|---|---|---|
-| 1 | New folder and repo `vendor-page` | To do | |
-| 2 | Plan mode first: page shows vendors from Supabase in a table, overdue vendors in red | To do | |
-| 3 | Small form to add a vendor; check it appears in Supabase | To do | |
-| 4 | Ask "Which key did you use? Is it safe to push this?"; no secret key in any pushed file | To do | |
-| 5 | Commit and push | To do | |
-
-Easiest way: use only the anon / publishable key, with Row Level Security policies that allow just reading and adding vendors.
-Proof needed: `vendor-page` repo link · screenshot of red overdue rows · screenshot of the new vendor in Supabase.
+| 1 | New folder and repo `vendor-page` | Done | Folder `Desktop\vendor-page` · repo [vendor-page](https://github.com/renukajadhav-spec/vendor-page) |
+| 2 | Plan mode first: page shows vendors from Supabase in a table, overdue vendors in red | Done | Plan read and approved before building · 15 vendors, 7 overdue in red on 19 Oct – [proof/day5-overdue-red.png](proof/day5-overdue-red.png) |
+| 3 | Small form to add a vendor; check it appears in Supabase | Done | Added "Shivam Enterprises"; table now 16 records – [proof/day5-new-vendor.png](proof/day5-new-vendor.png) |
+| 4 | Ask "Which key did you use? Is it safe to push this?"; no secret key in any pushed file | Done | Only the publishable key used; search for `service_role` / `sb_secret` found nothing. Two RLS policies (read + add only) – [proof/day5-rls-policies.png](proof/day5-rls-policies.png) |
+| 5 | Commit and push | Done | Commit `bf4f463` on `vendor-page` main |
 
 ---
 
