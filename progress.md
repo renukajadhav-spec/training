@@ -97,6 +97,22 @@ Plan: [training-plan.md](training-plan.md) for Days 1–5 · "Renuka's Learning 
 | 4 | Ask "Which key did you use? Is it safe to push this?"; no secret key in any pushed file | Done | Only the publishable key used; search for `service_role` / `sb_secret` found nothing. Two RLS policies (read + add only) – [proof/day5-rls-policies.png](proof/day5-rls-policies.png) |
 | 5 | Commit and push | Done | Commit `bf4f463` on `vendor-page` main |
 
+## Extra – Portfolio website (21 Oct 2026)
+
+Built a job-search portfolio from my resume, with Claude Code. Live: https://renukajadhav-spec.github.io/training/portfolio/ (file [docs/portfolio/index.html](docs/portfolio/index.html)).
+
+| # | Step | Proof |
+|---|---|---|
+| 1 | Plan mode: chose company names + email + LinkedIn, **no phone**; new page beside the Day 3 page | Plan approved before building |
+| 2 | Built the page with photo, menu, skills, experience, projects, education, contact | Commit `820c9f1` · PR #3 |
+| 3 | Personality: teal + gold, motto "Accuracy first, speed next", How I work, Currently learning, hobbies | Commit `effb252` · PR #5 (PR #4 went into `add-portfolio` by mistake: base was not `main`) |
+| 4 | Floating menu that follows you down the page | Commit `e3cb8a8` · PR #6 |
+| 5 | Safety check before every push: no passwords, keys or phone number | Done for all 3 commits |
+
+**Lessons:** a host (GitHub Pages) is needed to give an HTML file a public link · always check the PR **base is `main`** · Pages only publishes `main` · a browser cache can show an old version (use Ctrl + F5 or Incognito).
+
+**Open:** screenshot of the live page → `proof/portfolio.png`.
+
 ---
 
 # Learning Path – Days 6 to 20
