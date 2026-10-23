@@ -386,3 +386,4 @@ Built ahead of the plan (the app part belongs to Days 12–16), with fake data o
 | 5 | PR opened and merged | Done | https://github.com/renukajadhav-spec/po-invoice-checker/pull/1 |
 | 6 | Live on GitHub Pages | Done | https://renukajadhav-spec.github.io/po-invoice-checker/ |
 | 7 | Run all 5 samples on the live link + screenshots | To do | |
+| 8 | PDF and image upload with a review step (pdf.js + Tesseract.js OCR, fake sample PDFs/PNG) | Pushed, PR to merge | commit 25e6a33 on branch `pdf-image-upload` |
