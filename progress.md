@@ -372,3 +372,21 @@ FR comment format: Problem · Root cause · Fix · Tested · Status (Fixed / Nee
 - [ ] Find a root cause and write a clear user update
 - [ ] Follow the 3 safety rules without being reminded
 - [ ] Build a small app alone from a one-line request
+
+## Extra – PO–Invoice Checker MVP (23 Oct 2026)
+
+Built ahead of the plan (the app part belongs to Days 12–16), with fake data only.
+
+| # | Task | Status | Proof |
+|---|---|---|---|
+| 1 | Plan approved in Plan mode (CSV upload, new repo + GitHub Pages) | Done | |
+| 2 | Repo `po-invoice-checker`, README on `main` | Done | commit cc5eff4 |
+| 3 | App on branch `mvp-checker`: 6 checks, 5 samples, templates | Done | commit 2b270de |
+| 4 | Secret check before push (no keys or passwords) | Done | nothing found |
+| 5 | PR opened and merged | Done | https://github.com/renukajadhav-spec/po-invoice-checker/pull/1 |
+| 6 | Live on GitHub Pages | Done | https://renukajadhav-spec.github.io/po-invoice-checker/ |
+| 7 | Run all 5 samples on the live link + screenshots | To do | |
+| 8 | PDF and image upload with a review step (pdf.js + Tesseract.js OCR, fake sample PDFs/PNG) | Done | PR #2 |
+| 9 | Reader reads names, wrapped item names, month-first dates | Done | PR #3 |
+| 10 | GSTIN and company checks compare PO vs invoice only; vendor list, our-company setting and GSTIN-validity notes removed | Done | PRs #4–#7 |
+| 11 | Email + password sign-in (Supabase Auth), public sign-up off, users added in Supabase | Pushed, PR to merge | commit 19a3bfb on branch `add-login` |
