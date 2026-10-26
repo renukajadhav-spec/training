@@ -389,4 +389,6 @@ Built ahead of the plan (the app part belongs to Days 12–16), with fake data o
 | 8 | PDF and image upload with a review step (pdf.js + Tesseract.js OCR, fake sample PDFs/PNG) | Done | PR #2 |
 | 9 | Reader reads names, wrapped item names, month-first dates | Done | PR #3 |
 | 10 | GSTIN and company checks compare PO vs invoice only; vendor list, our-company setting and GSTIN-validity notes removed | Done | PRs #4–#7 |
-| 11 | Email + password sign-in (Supabase Auth), public sign-up off, users added in Supabase | Pushed, PR to merge | commit 19a3bfb on branch `add-login` |
+| 11 | Email + password sign-in (Supabase Auth), public sign-up off, users added in Supabase | Done | PR #8 |
+| 12 | Project folder structure (26 Oct): app split into `frontend/` (index.html, style.css, app.js), Python `backend/` outlines, `docs/`, `data/gst_rates.csv`, `tests/`, `requirements.txt`, `CLAUDE.md`, `.gitignore`; `.env` kept off GitHub; main `index.html` redirects so the live link keeps working | Done | PR #14 (commit 0c7bd0d) |
+| 13 | Live test after the move: `po-1001.pdf` + `invoice-501.pdf` on `/frontend/` | Done | 6/6 ✓, Ready for manager approval – [proof/po-checker-folder-structure-6of6.png](proof/po-checker-folder-structure-6of6.png) |
